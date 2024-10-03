@@ -16,7 +16,7 @@
 
         <h2>Quizz</h2>
 
-        <form action="/submit" method="get"></form>
+        <form method="get" action="https://postman-echo.com/get">
 
         <fieldset>
             <legend>Dados Pessoais</legend>
@@ -33,16 +33,68 @@
             <label for="nascimento">Data de Nascimento:</label>
             <input type="date" id="nascimento" name="nascimento" required><br>
 
-             <label for="genero">Gênero:</label><br>
-             <input type="radio" id="masculino" name="genero" value="Masculino" required>
-             <label for="masculino">Masculino</label><br>
-
-             <input type="radio" id="feminino" name="genero" value="Feminino">
-             <label for="feminino">Feminino</label><br>
-
-             <input type="radio" id="nao_especificar" name="genero" value="Nao quer especificar">
-             <label for="nao_especificar">Não quer especificar</label><br><br>
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero" name="genero" list="generos" placeholder="Selecione ou digite o gênero" required>
+            <datalist id="generos">
+                <option value="Masculino">
+                <option value="Feminino">
+                <option value="Não quer especificar">
+            </datalist><br><br>
         </fieldset>
-    </main>
+
+        <fieldset>
+            <legend>Perguntas sobre a Cidade</legend>
+            <label for="capital">1. Qual é a capital da Sicília?</label><br>
+            <input type="radio" id="palermo" name="capital" value="Palermo" required>
+            <label for="palermo">Palermo</label><br>
+            <input type="radio" id="catania" name="capital" value="Catania">
+            <label for="catania">Catania</label><br>
+            <input type="radio" id="messina" name="capital" value="Messina">
+            <label for="messina">Messina</label><br><br>
+            <label for="pontos_turisticos">2. Quais pontos turísticos visitou?</label><br>
+            <input type="checkbox" id="etnavisit" name="pontos" value="Etna">
+            <label for="etnavisit">Monte Etna</label><br>
+            
+            <input type="checkbox" id="valetemplos" name="pontos" value="Vale dos Templos">
+            <label for="valetemplos">Vale dos Templos</label><br><br>
+
+            <label for="data_visita">3. Data da sua visita à Sicília:</label>
+            <input type="date" id="data_visita" name="data_visita" required><br><br>
+
+            <label for="motivo_visita">4. Qual foi o motivo da sua visita à Sicília?</label><br>
+            <select id="motivo_visita" name="motivo_visita" required>
+                <option value="turismo">Turismo</option>
+                <option value="negocios">Negócios</option>
+                <option value="familia">Visitar familiares</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+
+            <label for="horario">5. Melhor horário para visitar a Sicília?</label>
+            <input type="time" id="horario" name="horario" required><br><br>
+
+            <label for="etnasize">6. Em uma escala de 1 a 10, como você avalia a experiência de visitar o Monte Etna?</label>
+            <input type="range" id="etnasize" name="etnasize" min="1" max="10" step="1"><br><br>
+
+            <label for="cor_favorita">7. Qual a sua cor favorita?</label>
+            <input type="color" id="cor_favorita" name="cor_favorita" value="#ff0000"><br><br>
+
+            <label for="altura_monte_etna">8. Qual é a altura do Monte Etna em metros?</label>
+            <input type="number" id="altura_monte_etna" name="altura_monte_etna" min="3000" max="4000" step="1" required><br><br>
+
+            <label for="comentario">9. Deixe um comentário sobre a sua visita:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escreva o seu comentário aqui..."></textarea><br><br>
+
+            <label for="melhorias">10. Quais pontos a melhorar na ilha?</label><br>
+            <textarea id="melhorias" name="melhorias" rows="4" cols="50" placeholder="Escreva as suas sugestões de melhoria..."></textarea><br><br>
+        </fieldset>
+
+        <button type="submit" autofocus>Enviar Quizz</button>
+        <input type="reset" value="Resetar Formulário">
+    </form>
+</main>
+<footer>
+    <p>Universidade Lusófona - Bruno Alexandre - 2024</p>
+</footer>
 
 </body>
+</html>
