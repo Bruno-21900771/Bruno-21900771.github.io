@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Quizz sobre a Cidade Sicília</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Quizz sobre a Cidade Sicília</h1>
+    </header>
+
+    <main>
+
+        <h2>Quizz</h2>
+
+        <form action="/submit" method="get"></form>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="apelido">Apelido:</label>
+            <input type="text" id="apelido" name="apelido" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" required><br>
+
+             <label for="genero">Gênero:</label><br>
+             <input type="radio" id="masculino" name="genero" value="Masculino" required>
+             <label for="masculino">Masculino</label><br>
+
+             <input type="radio" id="feminino" name="genero" value="Feminino">
+             <label for="feminino">Feminino</label><br>
+
+             <input type="radio" id="nao_especificar" name="genero" value="Nao quer especificar">
+             <label for="nao_especificar">Não quer especificar</label><br><br>
+        </fieldset>
+    </main>
+
+</body>
