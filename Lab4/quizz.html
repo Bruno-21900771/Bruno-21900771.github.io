@@ -44,24 +44,8 @@
 
         <fieldset>
             <legend>Perguntas sobre a Cidade</legend>
-            <label for="capital">1. Qual é a capital da Sicília?</label><br>
-            <input type="radio" id="palermo" name="capital" value="Palermo" required>
-            <label for="palermo">Palermo</label><br>
-            <input type="radio" id="catania" name="capital" value="Catania">
-            <label for="catania">Catania</label><br>
-            <input type="radio" id="messina" name="capital" value="Messina">
-            <label for="messina">Messina</label><br><br>
-            <label for="pontos_turisticos">2. Quais pontos turísticos visitou?</label><br>
-            <input type="checkbox" id="etnavisit" name="pontos" value="Etna">
-            <label for="etnavisit">Monte Etna</label><br>
-            
-            <input type="checkbox" id="valetemplos" name="pontos" value="Vale dos Templos">
-            <label for="valetemplos">Vale dos Templos</label><br><br>
 
-            <label for="data_visita">3. Data da sua visita à Sicília:</label>
-            <input type="date" id="data_visita" name="data_visita" required><br><br>
-
-            <label for="motivo_visita">4. Qual foi o motivo da sua visita à Sicília?</label><br>
+            <label for="motivo_visita">1. Qual foi o motivo da sua visita à Sicília?</label><br>
             <select id="motivo_visita" name="motivo_visita" required>
                 <option value="turismo">Turismo</option>
                 <option value="negocios">Negócios</option>
@@ -69,20 +53,87 @@
                 <option value="outro">Outro</option>
             </select><br><br>
 
-            <label for="horario">5. Melhor horário para visitar a Sicília?</label>
-            <input type="time" id="horario" name="horario" required><br><br>
+
+            <label for="capital">2. Qual é a capital da Sicília?</label><br>
+            <input type="radio" id="palermo" name="capital" value="Palermo" required>
+            <label for="palermo">Palermo</label><br>
+            <input type="radio" id="catania" name="capital" value="Catania">
+            <label for="catania">Catania</label><br>
+            <input type="radio" id="messina" name="capital" value="Messina">
+            <label for="messina">Messina</label><br><br>
+
+            
+            <label for="pontos_turisticos">3. Quais pontos turísticos visitou?</label><br>
+            <input type="checkbox" id="etnavisit" name="pontos" value="Etna">
+            <label for="etnavisit">Monte Etna</label><br>
+            <input type="checkbox" id="valetemplos" name="pontos" value="Vale dos Templos">
+            <label for="valetemplos">Vale dos Templos</label><br>
+            <input type="checkbox" id="siracusa" name="pontos" value="Siracusa">
+            <label for="siracusa">Siracusa</label><br>
+            <input type="checkbox" id="taormina" name="pontos" value="Taormina">
+            <label for="taormina">Taormina</label><br>
+            <input type="checkbox" id="agrigento" name="pontos" value="Agrigento">
+            <label for="agrigento">Agrigento</label><br>
+            <input type="checkbox" id="cefalú" name="pontos" value="Cefalú">
+            <label for="cefalú">Cefalú</label><br>
+            <label for="outros_pontos">Outros (especifique):</label>
+            <input type="text" id="outros_pontos" name="outros_pontos" placeholder="Digite outros pontos turísticos..."><br><br>
+
+
+            <label for="comidas_sicilia">4. Quais das seguintes comidas típicas da Sicília você experimentou?</label><br>
+            <input type="checkbox" id="arancini" name="comidas" value="Arancini">
+            <label for="arancini">Arancini (bolinhos de arroz)</label><br>
+            <input type="checkbox" id="cannoli" name="comidas" value="Cannoli">
+            <label for="cannoli">Cannoli (doce com ricota)</label><br>
+            <input type="checkbox" id="caponata" name="comidas" value="Caponata">
+            <label for="caponata">Caponata (refogado de vegetais)</label><br>
+            <input type="checkbox" id="pasta_norma" name="comidas" value="Pasta alla Norma">
+            <label for="pasta_norma">Pasta alla Norma (massa com berinjela)</label><br>
+            <input type="checkbox" id="granita" name="comidas" value="Granita">
+            <label for="granita">Granita (sobremesa gelada)</label><br>
+            <label for="outras_comidas">Outras comidas (especifique):</label>
+            <input type="text" id="outras_comidas" name="outras_comidas" placeholder="Digite outras comidas que experimentou..."><br><br>
+
+
+            <label for="atividades_sicilia">5. Quais atividades realizou durante a sua visita à Sicília?</label><br>
+            <input type="checkbox" id="passeios_historicos" name="atividades" value="Passeios Históricos">
+            <label for="passeios_historicos">Passeios Históricos</label><br>
+            <input type="checkbox" id="vinicolas" name="atividades" value="Visita a Vinícolas">
+            <label for="vinicolas">Visita a Vinícolas</label><br>
+            <input type="checkbox" id="praias" name="atividades" value="Relaxar nas Praias">
+            <label for="praias">Relaxar nas Praias</label><br>
+            <input type="checkbox" id="monte_etna" name="atividades" value="Passeio no Monte Etna">
+            <label for="monte_etna">Passeio no Monte Etna</label><br>
+            <input type="checkbox" id="templos" name="atividades" value="Visita a Templos Antigos">
+            <label for="templos">Visita a Templos Antigos</label><br>
+            <label for="outras_atividades">Outras atividades (especifique):</label>
+            <input type="text" id="outras_atividades" name="outras_atividades" placeholder="Digite outras atividades que realizou..."><br><br>
+
 
             <label for="etnasize">6. Em uma escala de 1 a 10, como você avalia a experiência de visitar o Monte Etna?</label>
             <input type="range" id="etnasize" name="etnasize" min="1" max="10" step="1"><br><br>
 
-            <label for="cor_favorita">7. Qual a sua cor favorita?</label>
-            <input type="color" id="cor_favorita" name="cor_favorita" value="#ff0000"><br><br>
 
-            <label for="altura_monte_etna">8. Qual é a altura do Monte Etna em metros?</label>
+            <label for="altura_monte_etna">7. Qual é a altura do Monte Etna em metros?</label>
             <input type="number" id="altura_monte_etna" name="altura_monte_etna" min="3000" max="4000" step="1" required><br><br>
+
+
+            <label for="praia_sicilia">8. Qual praia da Sicília mais gostou?</label><br>
+            <input type="radio" id="praia_taormina" name="praia" value="Praia de Taormina" required>
+            <label for="praia_taormina">Praia de Taormina</label><br>
+            <input type="radio" id="praia_san_vito" name="praia" value="Praia de San Vito Lo Capo">
+            <label for="praia_san_vito">Praia de San Vito Lo Capo</label><br>
+            <input type="radio" id="praia_iscas" name="praia" value="Praia de Isola Bella">
+            <label for="praia_iscas">Praia de Isola Bella</label><br>
+            <input type="radio" id="praia_fontane" name="praia" value="Praia de Fontane Bianche">
+            <label for="praia_fontane">Praia de Fontane Bianche</label><br>
+            <label for="outra_praia">Outra (especifique):</label>
+            <input type="text" id="outra_praia" name="outra_praia" placeholder="Escreva aqui outra praia que gostou..."><br><br>
+
 
             <label for="comentario">9. Deixe um comentário sobre a sua visita:</label><br>
             <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escreva o seu comentário aqui..."></textarea><br><br>
+
 
             <label for="melhorias">10. Quais pontos a melhorar na ilha?</label><br>
             <textarea id="melhorias" name="melhorias" rows="4" cols="50" placeholder="Escreva as suas sugestões de melhoria..."></textarea><br><br>
