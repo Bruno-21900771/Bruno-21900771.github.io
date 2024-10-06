@@ -1,6 +1,6 @@
 /* Estilo para o body */
 body {
-    background-color: #f0f0f0;
+    background-color: #f0f5f9;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
 
 /* Estilo para o cabeçalho */
 header {
-    background-color: #48D1CC;
+    background-color: #4A90E2;
     color: white;
     text-align: center;
     padding: 20px;
