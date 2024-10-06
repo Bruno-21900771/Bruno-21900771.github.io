@@ -53,5 +53,36 @@ footer {
     margin-top: 20px;
 }
 
+.galeria {
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
 
+#poema p {
+    font-style: italic;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+#video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#fotografias h3, #video h3, #poema h3 {
+    color: #5DADE2;
+    font-size: 24px;
+    border-bottom: 2px solid #5DADE2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
