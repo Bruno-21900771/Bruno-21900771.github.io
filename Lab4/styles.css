@@ -89,8 +89,20 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#fotografias {
+    margin-bottom: 0;
+}
+
+#video {
+    margin-top: 0;
+}
+
+
+
+
 
 section {
+    margin: 20px auto;
     max-width: 1000px;
     padding: 20px;
     background-color: white;
