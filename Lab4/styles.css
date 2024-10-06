@@ -130,7 +130,6 @@ input {
 
 label, input {
     display: block;
-    margin-bottom: 5px;
 }
 
 #quizz-form label {
