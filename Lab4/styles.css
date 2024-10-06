@@ -1,8 +1,12 @@
-/* Definir cor de fundo e fonte padrão */
+/* Estilo para o body */
 body {
     background-color: #f0f0f0;
     margin: 0;
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh; /* Garante que o body ocupa a altura da tela */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Estilo para o cabeçalho */
@@ -18,12 +22,16 @@ nav {
     background-color: #333;
     color: white;
     padding: 10px;
+    text-align: center;
+    margin: 0;
+    width: 100%; /* Alinha a barra de navegação com a barra verde */
 }
 
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -38,13 +46,12 @@ main {
     max-width: 1000px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Faz com que o main ocupe o espaço restante */
 }
 
 /* Estilo para as imagens */
 img {
-    width: 32%;
-    margin: 1%;
-    display: inline-block;
+    width: 100%;
     border-radius: 8px;
 }
 
@@ -54,5 +61,8 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
-    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
