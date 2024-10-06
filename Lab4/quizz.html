@@ -22,13 +22,13 @@
             <legend>Dados Pessoais</legend>
             
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br>
+            <input type="text" id="nome" name="nome" placeholder="Insira o seu nome" autocomplete="on" size="30" required><br>
 
             <label for="apelido">Apelido:</label>
-            <input type="text" id="apelido" name="apelido" required><br>
+            <input type="text" id="apelido" name="apelido" placeholder="Insira o seu apelido" autocomplete="on" maxlength="50" required><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" placeholder="Insira o seu email" autocomplete="on" required><br>
 
             <label for="nascimento">Data de Nascimento:</label>
             <input type="date" id="nascimento" name="nascimento" required><br>
@@ -118,7 +118,11 @@
             <input type="number" id="altura_monte_etna" name="altura_monte_etna" min="3000" max="4000" step="1" required><br><br>
 
 
-            <label for="praia_sicilia">8. Qual praia da Sicília mais gostou?</label><br>
+            <label for="horario_etna">8. Em que horário visitou o Monte Etna?</label><br>
+            <input type="time" id="horario_etna" name="horario_etna" required><br><br>
+
+
+            <label for="praia_sicilia">9. Qual praia da Sicília mais gostou?</label><br>
             <input type="radio" id="praia_taormina" name="praia" value="Praia de Taormina" required>
             <label for="praia_taormina">Praia de Taormina</label><br>
             <input type="radio" id="praia_san_vito" name="praia" value="Praia de San Vito Lo Capo">
@@ -131,11 +135,19 @@
             <input type="text" id="outra_praia" name="outra_praia" placeholder="Escreva aqui outra praia que gostou..."><br><br>
 
 
-            <label for="comentario">9. Deixe um comentário sobre a sua visita:</label><br>
-            <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escreva o seu comentário aqui..."></textarea><br><br>
+            <label for="cor_sicilia">10. Se tivesse de escolher uma cor, qual a que melhor representaria a Sicília para si:</label><br>
+            <input type="color" id="cor_sicilia" name="cor_sicilia" value="#ff0000"><br><br>
 
 
-            <label for="melhorias">10. Quais pontos a melhorar na ilha?</label><br>
+            <label for="foto_visita">11. Envie uma foto tirada durante a sua visita à Sicília:</label><br>
+            <input type="file" id="foto_visita" name="foto_visita" accept="image/*"><br><br>
+
+
+            <label for="comentario">12. Deixe um comentário sobre a sua visita:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" maxlength="250" placeholder="Escreva o seu comentário aqui..."></textarea><br><br>
+
+
+            <label for="melhorias">13. Quais pontos a melhorar na ilha?</label><br>
             <textarea id="melhorias" name="melhorias" rows="4" cols="50" placeholder="Escreva as suas sugestões de melhoria..."></textarea><br><br>
         </fieldset>
 
