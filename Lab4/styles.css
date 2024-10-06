@@ -132,3 +132,17 @@ label, input {
     margin-bottom: 5px;
 }
 
+#quizz-form label {
+    font-size: medium;
+    color: #333;
+}
+
+
+#viagem-form label {
+    font-size: small;
+    color: #666;
+}
+
+
+
+
