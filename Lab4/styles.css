@@ -128,20 +128,6 @@ input {
     font-size: medium;
 }
 
-label, input {
-    display: block;
-}
-
-#quizz-form label {
-    font-size: medium;
-    color: #333;
-}
-
-
-#viagem-form label {
-    font-size: small;
-    color: #666;
-}
 
 
 
