@@ -68,7 +68,6 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-
 #video iframe {
     display: block;
     margin: 10px auto; 
@@ -103,7 +102,6 @@ section {
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -123,6 +121,5 @@ img {
     height: auto;
     margin: 20px auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
