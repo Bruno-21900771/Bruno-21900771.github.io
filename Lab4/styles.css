@@ -125,8 +125,16 @@ img {
 
 .titulo-quizz {
     text-align: center; 
-    margin-top: 20px; 
-    margin-bottom: 20px; 
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+    font-size: 32px; 
+    color: #34495E; 
+}
+
+.titulo-dados {
+    text-align: center; 
+    margin-top: 15px; 
+    margin-bottom: 15px; 
     font-size: 32px; 
     color: #34495E; 
 }
